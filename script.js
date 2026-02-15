@@ -1,3 +1,14 @@
+// Loading Screen - simplified and faster
+window.addEventListener('load', () => {
+    const loadingScreen = document.getElementById('loadingScreen');
+    setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 300);
+    }, 800);
+});
+
 // Mobile Navigation Toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
@@ -31,22 +42,27 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background on scroll
+// Navbar background on scroll and scroll progress
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.1)';
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = '0 4px 6px -1px rgba(0, 0, 0, 0.1)';
+        navbar.classList.remove('scrolled');
     }
+
+    // Update scroll progress
+    const scrollProgress = document.getElementById('scrollProgress');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrollPercentage = (scrollTop / scrollHeight) * 100;
+    scrollProgress.style.width = scrollPercentage + '%';
 });
 
-// Intersection Observer for fade-in animations
+// Simplified fade-in animations - subtle and professional
 const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
+    threshold: 0.15,
+    rootMargin: '0px'
 };
 
 const observer = new IntersectionObserver((entries) => {
@@ -58,28 +74,12 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections
+// Observe all sections with simple fade-in
 document.querySelectorAll('section').forEach(section => {
     section.style.opacity = '0';
-    section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+    section.style.transform = 'translateY(10px)';
+    section.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
     observer.observe(section);
-});
-
-// Observe skill categories
-document.querySelectorAll('.skill-category').forEach((category, index) => {
-    category.style.opacity = '0';
-    category.style.transform = 'translateY(20px)';
-    category.style.transition = `opacity 0.6s ease-out ${index * 0.1}s, transform 0.6s ease-out ${index * 0.1}s`;
-    observer.observe(category);
-});
-
-// Observe project cards
-document.querySelectorAll('.project-card').forEach((card, index) => {
-    card.style.opacity = '0';
-    card.style.transform = 'translateY(20px)';
-    card.style.transition = `opacity 0.6s ease-out ${index * 0.2}s, transform 0.6s ease-out ${index * 0.2}s`;
-    observer.observe(card);
 });
 
 // Add active state to navigation based on scroll position
@@ -104,23 +104,41 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Typing effect for hero subtitle (optional enhancement)
-const subtitle = document.querySelector('.hero-subtitle');
-if (subtitle) {
-    const text = subtitle.textContent;
-    subtitle.textContent = '';
-    let i = 0;
-    
-    setTimeout(() => {
-        const typeWriter = () => {
-            if (i < text.length) {
-                subtitle.textContent += text.charAt(i);
-                i++;
-                setTimeout typeWriter, 50);
-            }
-        };
-        typeWriter();
-    }, 1000);
-}
+// Add active nav link styling
+const style = document.createElement('style');
+style.textContent = `
+    .nav-menu a.active {
+        color: var(--primary-color);
+    }
+`;
+document.head.appendChild(style);
 
-console.log('Portfolio website loaded successfully!');
+// Removed counter animations for stats - displaying values directly for better UX
+
+// Removed parallax and 3D tilt effects for better user experience
+
+// Simplified animations - just fade in on scroll, no complex effects
+
+// Back to top button
+const backToTopButton = document.getElementById('backToTop');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.classList.add('visible');
+    } else {
+        backToTopButton.classList.remove('visible');
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+
+// Removed ripple effects, typing animations, and other distracting effects
+// Keeping only essential, professional interactions
+
+console.log('🚀 AI-Native Portfolio Loaded Successfully!');
+console.log('💡 Platform Engineering • Event-Driven Architecture • AI-Augmented SDLC');

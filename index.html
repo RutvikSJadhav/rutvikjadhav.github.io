@@ -3,23 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rutvik Jadhav - Senior Software Developer</title>
+    <title>Rutvik Jadhav | Senior Backend Engineer & Distributed Systems Architect</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">RJ</div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">Rutvik Jadhav</div>
+            <div class="nav-brand">
+                <span class="brand-initials">RJ</span>
+                <div class="brand-info">
+                    <span class="brand-name">Rutvik Jadhav</span>
+                    <span class="brand-title">Software Engineer</span>
+                </div>
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
+                <li><a href="#ai-native">AI-Native</a></li>
+                <li><a href="#platform">Platform</a></li>
+                <li><a href="#skills">Tech Stack</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="https://github.com/RutvikSJadhav" target="_blank" class="nav-github" title="GitHub Profile">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="mailto:rutvikjadhav9922@gmail.com" class="nav-cta">
+                    <i class="fas fa-envelope"></i> Get in Touch
+                </a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -32,11 +58,9 @@
     <section id="home" class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Rutvik Jadhav</span></h1>
-                <h2 class="hero-subtitle">Senior Software Developer</h2>
-                <p class="hero-description">
-                    Specializing in High-Availability Distributed Systems & Microservices Architecture
-                </p>
+                <h1 class="hero-title">Engineering the Financial Backbone for <span class="highlight">6 Million+ Daily Transactions</span></h1>
+                <h2 class="hero-subtitle">Senior Backend Engineer & Distributed Systems Architect. I build high-availability payment switches that process billions in volume with 99.9% uptime. Specializing in Java, Kafka, and Dapr to create self-healing, event-driven architectures that never fail.</h2>
+                <p class="hero-tagline">The Modern Backend Architect</p>
                 <div class="hero-stats">
                     <div class="stat">
                         <h3>6M+</h3>
@@ -52,7 +76,7 @@
                     </div>
                 </div>
                 <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="Rutvik_Jadhav.pdf" class="btn btn-primary" download="Rutvik_Jadhav.pdf">Download Resume</a>
                     <a href="#projects" class="btn btn-secondary">View Projects</a>
                 </div>
             </div>
@@ -62,19 +86,35 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title">The Modern Backend Architect</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
-                        Senior Software Developer with expertise in architecting mission-critical payment switches 
-                        scaling to 6M+ daily transactions with 99.9% uptime. I specialize in building high-availability 
-                        distributed systems using modern microservices architecture.
+                    <p class="about-intro">
+                        <strong>Senior Backend Engineer</strong> based in Pune, specializing in <span class="highlight-text">Event-Driven Architecture</span>,
+                        <span class="highlight-text">Backend Engineering</span> and <span class="highlight-text">AI-Augmented Development</span>.
                     </p>
                     <p>
-                        Expert in leveraging AI-driven development tools to accelerate system design and reduce 
-                        prototyping cycles by 30%. Passionate about mentoring junior developers and implementing 
-                        best practices in software engineering.
+                        At Fyndna Techcorp, I architect mission-critical payment switches processing <strong>6M+ daily transactions</strong>
+                        with <strong>99.9% uptime</strong>. My approach: shift from manual coding to AI-architected solutions,
+                        building platforms that make entire teams 10x faster.
                     </p>
+                    <div class="about-highlights">
+                        <div class="highlight-card">
+                            <i class="fas fa-rocket"></i>
+                            <h4>Platform Engineering</h4>
+                            <p>Building developer platforms that reduce cognitive load and accelerate delivery</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-brain"></i>
+                            <h4>AI-Native SDLC</h4>
+                            <p>Leveraging LLMs for automated refactoring, intelligent testing, and security scanning</p>
+                        </div>
+                        <div class="highlight-card">
+                            <i class="fas fa-bolt"></i>
+                            <h4>Event-Driven Systems</h4>
+                            <p>SAGA patterns, CQRS and idempotency for reliable financial transactions</p>
+                        </div>
+                    </div>
                     <div class="about-info">
                         <div class="info-item">
                             <i class="fas fa-graduation-cap"></i>
@@ -98,21 +138,207 @@
         </div>
     </section>
 
+    <!-- AI-Native Developer Section -->
+    <section id="ai-native" class="ai-native">
+        <div class="container">
+            <h2 class="section-title">AI-Augmented SDLC</h2>
+            <p class="section-subtitle">Pioneering the shift from "Manual Coding" to "AI-Architected Solutions"</p>
+
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <div class="ai-icon">
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <h3>Automated Debt Reduction</h3>
+                    <p class="ai-description">
+                        Leveraging LLM-based tools to actively refactor legacy code and reduce technical debt cycles by <strong>30%</strong>.
+                    </p>
+                    <ul class="ai-features">
+                        <li><i class="fas fa-check-circle"></i> AI-powered code analysis and refactoring suggestions</li>
+                        <li><i class="fas fa-check-circle"></i> Automated pattern detection for anti-patterns</li>
+                        <li><i class="fas fa-check-circle"></i> Continuous code quality improvement</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">GitHub Copilot</span>
+                        <span class="tech-badge">SonarQube AI</span>
+                        <span class="tech-badge">CodeGuru</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3>Intelligent Testing</h3>
+                    <p class="ai-description">
+                        Generating comprehensive unit test suites for edge cases that humans often miss, boosting coverage to <strong>80%</strong>.
+                    </p>
+                    <ul class="ai-features">
+                        <li><i class="fas fa-check-circle"></i> AI-generated test cases for edge scenarios</li>
+                        <li><i class="fas fa-check-circle"></i> Automated mutation testing</li>
+                        <li><i class="fas fa-check-circle"></i> Predictive test failure analysis</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">JUnit AI</span>
+                        <span class="tech-badge">Mockito</span>
+                        <span class="tech-badge">TestGen-LLM</span>
+                    </div>
+                </div>
+
+                <div class="ai-card">
+                    <div class="ai-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Automated Security Scanning</h3>
+                    <p class="ai-description">
+                        Using AI-powered scanners to identify vulnerabilities before code hits production.
+                    </p>
+                    <ul class="ai-features">
+                        <li><i class="fas fa-check-circle"></i> Real-time vulnerability detection in IDE</li>
+                        <li><i class="fas fa-check-circle"></i> AI-powered threat modeling</li>
+                        <li><i class="fas fa-check-circle"></i> Automated security patch suggestions</li>
+                    </ul>
+                    <div class="tech-badges">
+                        <span class="tech-badge">Snyk AI</span>
+                        <span class="tech-badge">CodeQL</span>
+                        <span class="tech-badge">SonarQube</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ai-impact">
+                <div class="impact-stat">
+                    <div class="impact-number">10x</div>
+                    <div class="impact-label">Faster Development</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">30%</div>
+                    <div class="impact-label">Debt Reduction</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">80%</div>
+                    <div class="impact-label">Test Coverage</div>
+                </div>
+                <div class="impact-stat">
+                    <div class="impact-number">Zero</div>
+                    <div class="impact-label">Security Incidents</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platform Engineering Section -->
+    <section id="platform" class="platform-engineering">
+        <div class="container">
+            <h2 class="section-title">Platform Engineering & DevEx</h2>
+            <p class="section-subtitle">Building tools that make developers 10x faster</p>
+
+            <div class="platform-content">
+                <div class="platform-main">
+                    <h3>Reducing Cognitive Load Through Standardization</h3>
+                    <p>
+                        Platform Engineering is the new DevOps. I build internal developer platforms that abstract away
+                        infrastructure complexity, allowing teams to focus on business logic instead of deployment headaches.
+                    </p>
+                </div>
+
+                <div class="platform-grid">
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <i class="fas fa-infinity"></i>
+                        </div>
+                        <h4>GitOps & CI/CD</h4>
+                        <p>
+                            Streamlining deployment pipelines to ensure <strong>commit-to-production</strong> time is measured in <strong>minutes, not hours</strong>.
+                        </p>
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-value">&lt;5min</span>
+                                <span class="metric-label">Deploy Time</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Automated</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-mini">
+                            <span>Jenkins</span>
+                            <span>Helm</span>
+                            <span>GitOps</span>
+                        </div>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h4>Event-Driven Autoscaling</h4>
+                        <p>
+                            Using <strong>KEDA</strong> to scale infrastructure based on real-time event metrics (Kafka lag)
+                            rather than just CPU usage—saving costs and ensuring performance during traffic spikes.
+                        </p>
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Cost Savings</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">600 TPS</span>
+                                <span class="metric-label">Peak Load</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-mini">
+                            <span>KEDA</span>
+                            <span>Kafka</span>
+                            <span>Prometheus</span>
+                        </div>
+                    </div>
+
+                    <div class="platform-card">
+                        <div class="platform-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h4>Observability Pipeline</h4>
+                        <p>
+                            Building comprehensive observability with distributed tracing, metrics, and logs.
+                            <strong>Mean Time to Detection (MTTD)</strong> reduced to under 2 minutes.
+                        </p>
+                        <div class="platform-metrics">
+                            <div class="metric">
+                                <span class="metric-value">&lt;2min</span>
+                                <span class="metric-label">MTTD</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-value">99.9%</span>
+                                <span class="metric-label">Uptime SLA</span>
+                            </div>
+                        </div>
+                        <div class="tech-stack-mini">
+                            <span>Grafana</span>
+                            <span>OpenTelemetry</span>
+                            <span>Zipkin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title">Experience Timeline</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <h3>Senior Software Developer</h3>
-                        <h4>FYNDNA TECHCORP PVT. LTD.</h4>
-                        <p class="timeline-date">June 2022 – Present | Pune, Maharashtra</p>
-                        <p class="timeline-description">
-                            Leading the architecture and development of high-availability payment switches 
-                            handling millions of daily transactions.
-                        </p>
+                        <h4>Fyndna Techcorp Pvt. Ltd.</h4>
+                        <p class="timeline-date">June 2022 – Present</p>
+                        <ul class="timeline-highlights">
+                            <li>Leading a team of 8 developers in building next-gen fintech solutions.</li>
+                            <li>Specializing in payment switches (NEFT/IMPS) and distributed architectures.</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -122,47 +348,95 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
+            <h2 class="section-title">Technical Stack & Patterns</h2>
+            <p class="section-subtitle">Modern architecture patterns for high-performance systems</p>
+
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <h3><i class="fas fa-project-diagram"></i> Architecture Patterns</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C/C++</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Shell</span>
+                        <span class="skill-tag" data-tooltip="Distributed transaction management">SAGA Pattern</span>
+                        <span class="skill-tag" data-tooltip="Command Query Responsibility Segregation">CQRS</span>
+                        <span class="skill-tag" data-tooltip="Event-driven communication">Event Sourcing</span>
+                        <span class="skill-tag" data-tooltip="Preventing duplicate operations">Idempotency</span>
+                        <span class="skill-tag" data-tooltip="Asynchronous messaging">Event-Driven Architecture</span>
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Technologies</h3>
+                    <h3><i class="fas fa-code"></i> Backend & Languages</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Kafka</span>
+                        <span class="skill-tag">Java 21+</span>
+                        <span class="skill-tag">Spring Boot 3.x</span>
+                        <span class="skill-tag">Hibernate/JPA</span>
+                        <span class="skill-tag">C/C++</span>
+                        <span class="skill-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-stream"></i> Event-Driven Systems</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Kafka</span>
+                        <span class="skill-tag">Dapr Runtime</span>
+                        <span class="skill-tag">Temporal Workflows</span>
+                        <span class="skill-tag">Event Sourcing</span>
+                        <span class="skill-tag">Message Queues</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-dharmachakra"></i> Software Engineering</h3>
+                    <div class="skill-tags">
                         <span class="skill-tag">Kubernetes</span>
                         <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Helm Charts</span>
+                        <span class="skill-tag">GitOps</span>
+                        <span class="skill-tag">KEDA Autoscaling</span>
                         <span class="skill-tag">GCP</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">Dapr</span>
                     </div>
                 </div>
+
                 <div class="skill-category">
-                    <h3><i class="fas fa-layer-group"></i> Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Spring Boot</span>
-                        <span class="skill-tag">Hibernate</span>
-                        <span class="skill-tag">Temporal</span>
-                        <span class="skill-tag">JUnit</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3><i class="fas fa-chart-line"></i> Monitoring</h3>
+                    <h3><i class="fas fa-eye"></i> Observability Pipeline</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Grafana</span>
                         <span class="skill-tag">Prometheus</span>
                         <span class="skill-tag">OpenTelemetry</span>
-                        <span class="skill-tag">Zipkin</span>
-                        <span class="skill-tag">KEDA</span>
+                        <span class="skill-tag">Zipkin (Tracing)</span>
+                        <span class="skill-tag">Logging & Monitoring</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data & Persistence</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis Cache</span>
+                        <span class="skill-tag">JDBC</span>
+                        <span class="skill-tag">Connection Pooling</span>
+                        <span class="skill-tag">Database Sharding</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-shield-alt"></i> Security & Quality</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Security Scanning</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">SonarQube</span>
+                        <span class="skill-tag">Snyk</span>
+                        <span class="skill-tag">Code Reviews</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI-Augmented Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">GitHub Copilot</span>
+                        <span class="skill-tag">LLM-based Refactoring</span>
+                        <span class="skill-tag">AI Test Generation</span>
+                        <span class="skill-tag">Automated Code Review</span>
                     </div>
                 </div>
             </div>
@@ -172,54 +446,232 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Key Projects</h2>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">Event-driven architectures handling millions of transactions with zero tolerance for failure</p>
+
             <div class="projects-grid">
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-exchange-alt"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="project-badge">Real-Time Payments</div>
                     </div>
                     <h3>IMPS Payment Switch</h3>
-                    <p class="project-description">
-                        Developed and scaled an IMPS payment switch handling <strong>6 million daily transactions</strong> 
-                        with peak traffic of 600 TPS and 99.9% uptime.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>Built 60+ backend microservices</li>
-                        <li>Real-time alerting with sub-20ms delivery</li>
-                        <li>Deployed on Kubernetes (GCP)</li>
-                        <li>80% test coverage with AI-assisted testing</li>
-                    </ul>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-bullseye"></i> The Challenge:</h4>
+                        <p>
+                            Scale a real-time payment system to handle peak traffic of <strong>600 TPS</strong> while maintaining
+                            sub-second latency and ensuring <strong>idempotency guarantees</strong>—because in payments, duplicates are not an option.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-cogs"></i> The Architecture:</h4>
+                        <p><strong>Event-Driven Architecture (EDA) & CQRS Pattern</strong></p>
+                        <ul class="project-highlights">
+                            <li><strong>Write Path:</strong> Payment processing with idempotency keys and SAGA orchestration</li>
+                            <li><strong>Read Path:</strong> Decoupled transaction history queries using materialized views</li>
+                            <li><strong>Event-Driven Autoscaling:</strong> KEDA scales pods based on Kafka lag, not CPU—40% cost savings</li>
+                            <li><strong>Observability Pipeline:</strong> Sub-20ms alerting with OpenTelemetry distributed tracing</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-chart-bar"></i> The Impact:</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <span class="impact-value">99.9%</span>
+                                <span class="impact-desc">Uptime SLA</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">600 TPS</span>
+                                <span class="impact-desc">Peak Load</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">80%</span>
+                                <span class="impact-desc">Test Coverage</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">&lt;20ms</span>
+                                <span class="impact-desc">Alert Latency</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Kafka</span>
+                        <span class="tech-primary">Java 21</span>
+                        <span class="tech-primary">Spring Boot</span>
+                        <span class="tech-primary">Kafka</span>
+                        <span>KEDA</span>
                         <span>Kubernetes</span>
-                        <span>GCP</span>
+                        <span>PostgreSQL</span>
+                        <span>Redis</span>
+                        <span>OpenTelemetry</span>
+                    </div>
+
+                    <div class="project-award">
+                        <i class="fas fa-trophy"></i> Top of the Game 2024 Award
                     </div>
                 </div>
+
                 <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-money-check-alt"></i>
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-badge">Async Payments</div>
                     </div>
                     <h3>NEFT Payment Switch</h3>
-                    <p class="project-description">
-                        Architected and led end-to-end design of a NEFT payment switch with AI-augmented 
-                        approach to reduce prototyping time.
-                    </p>
-                    <ul class="project-highlights">
-                        <li>Engineered 30+ microservices</li>
-                        <li>Integrated Kafka and Dapr for resilient flows</li>
-                        <li>Temporal workflows for state orchestration</li>
-                        <li>Mentored junior developers</li>
-                    </ul>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-bullseye"></i> The Challenge:</h4>
+                        <p>
+                            Design a resilient payment switch for high-volume asynchronous transactions with complex state management
+                            across 30+ microservices, ensuring <strong>eventual consistency</strong> and automated failure recovery.
+                        </p>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-cogs"></i> The Architecture:</h4>
+                        <p><strong>SAGA Pattern with Temporal Workflows</strong></p>
+                        <ul class="project-highlights">
+                            <li><strong>Choreography-based SAGA:</strong> Event-driven compensation for failed transactions</li>
+                            <li><strong>Temporal Workflows:</strong> Durable execution for long-running payment processes</li>
+                            <li><strong>Idempotency Layer:</strong> Preventing duplicate payments with distributed locks</li>
+                            <li><strong>Automated Security:</strong> AI-powered vulnerability scanning in CI/CD pipeline</li>
+                        </ul>
+                    </div>
+
+                    <div class="project-section">
+                        <h4><i class="fas fa-chart-bar"></i> The Impact:</h4>
+                        <div class="impact-grid">
+                            <div class="impact-item">
+                                <span class="impact-value">30+</span>
+                                <span class="impact-desc">Microservices</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">100%</span>
+                                <span class="impact-desc">Auto Recovery</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">Zero</span>
+                                <span class="impact-desc">Duplicate Txns</span>
+                            </div>
+                            <div class="impact-item">
+                                <span class="impact-value">30%</span>
+                                <span class="impact-desc">Debt Reduction</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-tech">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Temporal</span>
+                        <span class="tech-primary">Java 21</span>
+                        <span class="tech-primary">Spring Boot</span>
+                        <span class="tech-primary">Temporal</span>
                         <span>Dapr</span>
+                        <span>Kafka</span>
                         <span>Docker</span>
+                        <span>Helm</span>
+                        <span>Grafana</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Personal Projects Section -->
+    <section id="personal-projects" class="personal-projects">
+        <div class="container">
+            <h2 class="section-title">Open Source & Personal Projects</h2>
+            <p class="section-subtitle">Building in public - exploring new technologies and solving real-world problems</p>
+
+            <!-- Optional: Add a banner image for the section -->
+            <!-- <div class="section-banner">
+                <img src="images/microservices-banner.jpg" alt="Microservices Architecture">
+            </div> -->
+
+            <div class="github-projects-grid">
+                <!-- Patient Management Microservices Ecosystem -->
+                <div class="github-project-card featured-project">
+                    <div class="project-header-github">
+                        <i class="fab fa-github"></i>
+                        <span class="project-status">Production Ready</span>
+                    </div>
+                    <h3>Healthcare Management Microservices</h3>
+                    <p class="project-description-github">
+                        A complete end-to-end healthcare management platform built with microservices architecture.
+                        Features 7 independent services with API Gateway, JWT authentication, AI-powered image recognition, and real-time notifications.
+                    </p>
+
+                    <div class="microservices-list">
+                        <h4>Microservices Architecture:</h4>
+                        <div class="service-grid">
+                            <a href="https://github.com/RutvikSJadhav/api-gateway" target="_blank" class="service-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>API Gateway</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/Authentication" target="_blank" class="service-item">
+                                <i class="fas fa-lock"></i>
+                                <span>Authentication</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/patient-management-service" target="_blank" class="service-item">
+                                <i class="fas fa-user-injured"></i>
+                                <span>Patient Service</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/health-summary-service" target="_blank" class="service-item">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Health Summary</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/billing-service" target="_blank" class="service-item">
+                                <i class="fas fa-file-invoice-dollar"></i>
+                                <span>Billing Service</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/alert-notification-service" target="_blank" class="service-item">
+                                <i class="fas fa-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                            <a href="https://github.com/RutvikSJadhav/image-recognition-service" target="_blank" class="service-item ai-service">
+                                <i class="fas fa-brain"></i>
+                                <span>Image Recognition</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-features">
+                        <span><i class="fas fa-check-circle"></i> Microservices Architecture with API Gateway</span>
+                        <span><i class="fas fa-check-circle"></i> JWT-based Authentication & Authorization</span>
+                        <span><i class="fas fa-check-circle"></i> AI-Powered Image Recognition (ML Integration)</span>
+                        <span><i class="fas fa-check-circle"></i> Real-time Alert & Notification System</span>
+                        <span><i class="fas fa-check-circle"></i> Service-to-Service Communication</span>
+                    </div>
+
+                    <div class="project-tech-github">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Cloud</span>
+                        <span>Python</span>
+                        <span>TensorFlow</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+                        <span>JWT</span>
+                        <span>Microservices</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="https://github.com/RutvikSJadhav?tab=repositories&q=service" target="_blank" class="btn-github">
+                            <i class="fab fa-github"></i> View All Services
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="github-cta">
+                <p>Want to see more of my work?</p>
+                <a href="https://github.com/RutvikSJadhav" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> Visit My GitHub Profile
+                </a>
             </div>
         </div>
     </section>
@@ -227,27 +679,36 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title">Let's Build Something Scalable.</h2>
             <div class="contact-content">
-                <p class="contact-description">
-                    I'm always open to discussing new opportunities, interesting projects, or partnerships.
-                </p>
                 <div class="contact-info">
-                    <a href="tel:+919922653553" class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 9922653553</span>
-                    </a>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Pune, Maharashtra</p>
+                        </div>
+                    </div>
                     <a href="mailto:rutvikjadhav9922@gmail.com" class="contact-item">
                         <i class="fas fa-envelope"></i>
-                        <span>rutvikjadhav9922@gmail.com</span>
+                        <div>
+                            <h4>Email</h4>
+                            <p>rutvikjadhav9922@gmail.com</p>
+                        </div>
                     </a>
-                    <a href="https://linkedin.com/in/rutvik-jadhav" target="_blank" class="contact-item">
+                    <a href="tel:+919922653553" class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 9922653553</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/RutvikJadhav/" target="_blank" class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn Profile</span>
-                    </a>
-                    <a href="https://github.com/RutvikSJadhav" target="_blank" class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub Profile</span>
+                        <div>
+                            <h4>Social</h4>
+                            <p>LinkedIn Profile</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -260,6 +721,11 @@
             <p>&copy; 2026 Rutvik Jadhav. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" title="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
